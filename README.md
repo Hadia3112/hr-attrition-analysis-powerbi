@@ -1,53 +1,80 @@
-# HR Analytics: Employee Attrition & Performance Analysis
+# HR Attrition Analysis | Power BI
 
-A Power BI dashboard analyzing employee attrition across 10+ factors to help HR teams identify retention risks and take proactive action.
+An interactive Power BI dashboard built on the IBM HR Analytics dataset, designed to help HR teams understand why employees leave, identify high-risk groups, and take proactive steps to improve retention.
 
 ## Project Overview
 
-This project uses the IBM HR Analytics Employee Attrition dataset to explore why employees leave a company, and which factors most strongly predict attrition. The goal is to translate raw HR data into clear, actionable insights for decision-makers.
+This dashboard transforms raw HR data into clear, actionable insights through 3 connected report pages, covering 10+ attrition factors, KPI tracking, and a ranked risk-factor summary — all in one place.
 
-**Tool used:** Power BI (Power Query, DAX, Data Visualization)
-**Dataset:** [IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset) (Kaggle)
+## Dashboard Pages
 
-## Objective
+### 1️⃣ Executive Summary
 
-- End User: HR Managers / Department Heads
-- Goal: Identify key factors driving employee attrition and provide actionable recommendations to improve retention
-- Data Type: Mix of factual data (income, age) and survey-based perception data (job satisfaction, work-life balance)
+* KPI cards: Total Employees (1,470), Overall Attrition Rate (16.12%)
+* Summary table ranking all 10 factors by highest-risk group and attrition rate
+* Horizontal bar chart comparing attrition rate across all factors at a glance
 
-## Key Findings
+### 2️⃣ Tenure & Personal Factors
 
-| Factor | Highest Risk Group | Attrition Rate |
-|---|---|---|
-| Monthly Income | Low | 56.1% |
-| Work-Life Balance | Bad | 31.25% |
-| Years at Company | 0-2 (New) | ~31% |
-| OverTime | Yes | 30.5% |
-| Age Group | 18-25 | ~30% |
-| Marital Status | Single | 25.5% |
-| Job Satisfaction | Low | 23% |
-| Department | Sales | ~21% |
-| Distance from Home | 15+ km | 20.67% |
-| Years in Current Role | 0-2 (New to Role) | ~19% |
+* Attrition Rate by Years in Current Role
+* Attrition Rate by Work-Life Balance
+* Attrition Rate by Marital Status
+* Attrition Rate by Income Range
+* Attrition Rate by Years at Company
 
-Overall Attrition Rate: 16.12%
+### 3️⃣ Demographics & Work Factors
 
-## Top Recommendations
-
-1. Strengthen onboarding — new employees (0-2 years) show the highest attrition; early engagement programs could help.
-2. Review compensation — low-income employees show dramatically higher attrition.
-3. Address overtime/burnout — overtime workers leave at 3x the rate of others.
-4. Sales department retention strategy — highest attrition by department; exit interviews recommended.
+* Attrition Rate by Age Group
+* Attrition Rate by Department
+* Attrition Rate by Job Satisfaction
+* Attrition Rate by Distance from Home
+* Attrition Rate by OverTime
 
 ## Dashboard Preview
-### Executive Summary
-![Executive Summary](Executive_Summary.PNG)
 
-### Page 1: Tenure & Personal Factors
-![Tenure and Personal Factors](Tensure___Personal_Factors.PNG)
+### 1️⃣ Executive Summary
+![Executive Summary](Executive%20Summary.PNG)
 
-### Page 2: Demographics & Work Factors
-![Demographics and Work Factors](Demographics_and_Work_Factors.PNG)
+### 2️⃣ Tenure & Personal Factors
+![Tenure and Personal Factors](Tensure%20%26%20Personal%20Factors.PNG)
+
+### 3️⃣ Demographics & Work Factors
+![Demographics and Work Factors](Demographics%20and%20Work%20Factors.PNG)
+
+## Tools & Techniques Used
+
+* **Power BI Desktop** — data cleaning, modeling, and report design
+* **Power Query** — removed constant/irrelevant columns, fixed data types
+* **DAX** — measures (Attrition Rate, Total Employees), calculated columns (Income Range, Age Group, Years at Company Group), SWITCH and IF logic for categorization
+* **Sort by Column** — for correct logical ordering of custom categories
+* **Data Visualization** — KPI cards, bar charts, summary tables
+
+## Key Insights
+
+* **Compensation is the strongest driver of attrition** — low-income employees show a 56.1% attrition rate, by far the highest of any factor
+* **New employees are at the highest risk** — those in their first 0-2 years at the company show ~31% attrition, suggesting onboarding and early engagement are critical
+* **Overtime and poor work-life balance correlate strongly with attrition** — overtime workers leave at nearly 3x the rate of non-overtime workers
+* **Sales has the highest departmental attrition** (~21%), pointing to potential role-specific pressure
+
+## Recommendations
+
+1. Review compensation structure for entry-level and low-income roles
+2. Strengthen onboarding and 90-day check-ins for new hires
+3. Revisit overtime policies and workload distribution
+4. Investigate Sales department-specific retention strategies (exit interviews, support programs)
+
+## Files in This Repository
+
+* `HR_Attrition_Analysis.pbix` — Power BI project file
+* `Executive Summary.PNG`, `Tensure & Personal Factors.PNG`, `Demographics and Work Factors.PNG` — Dashboard preview images
+* `README.md` — Project documentation
+
+## Connect
+
+* LinkedIn: [your-linkedin-url]
+* GitHub: [github.com/Hadia3112](https://github.com/Hadia3112)
+
+⭐ If you found this project useful, feel free to star this repository!
 
 
 ## How It Was Built
