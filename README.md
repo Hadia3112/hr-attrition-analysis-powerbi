@@ -65,13 +65,12 @@ This dashboard transforms raw HR data into clear, actionable insights through 3 
 
 ## Files in This Repository
 
-* `HR_Attrition_Analysis.pbix` — Power BI project file
 * `Executive Summary.PNG`, `Tensure & Personal Factors.PNG`, `Demographics and Work Factors.PNG` — Dashboard preview images
 * `README.md` — Project documentation
 
 ## Connect
-
-* LinkedIn: [your-linkedin-url]
+Built by Hadia Ahad | Data Analyst
+* LinkedIn: [linkedin.com/in/hadi12]
 * GitHub: [github.com/Hadia3112](https://github.com/Hadia3112)
 
 ⭐ If you found this project useful, feel free to star this repository!
