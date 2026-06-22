@@ -56,7 +56,3 @@ Overall Attrition Rate: 16.12%
 - Created DAX measures (Attrition Rate, Total Employees)
 - Built conditional/calculated columns to group continuous data (Income, Age, Tenure)
 - Designed a 3-page dashboard: Executive Summary, and detailed factor breakdowns
-
-## Files
-
-- HR_Attrition_Analysis.pbix — Power BI file
